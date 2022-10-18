@@ -1,1 +1,1 @@
-typing
+This is a typing game that times how long it takes you to type a quote from Aliens.
