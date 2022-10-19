@@ -3,7 +3,6 @@ const quotes = [
     'We are on an express elevator to hell going down.',
     'They cut the power.',
     'I say we take off, nuke the site from orbit. It is the only way to be sure.',
-    'Game over, man.',
     'Nuke it from orbit, it is the only way to be sure.',
     'We had better get back because it will be dark soon and they mostly come at night. Mostly.',
 ]
@@ -19,9 +18,14 @@ let wordQueue;
 let highlightPosition;
 let startTime;
 
+function initializeGame() {
+    quote.innerHTML = '';
+    message.innerHTML = '';
+}
+
 function startGame() {
     console.log("Game started!");
-
+    initializeGame();
     const quoteIndex = Math.floor(Math.random() * quotes.length);
     const quoteText = quotes[quoteIndex];
 
